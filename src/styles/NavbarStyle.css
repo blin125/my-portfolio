@@ -1,0 +1,94 @@
+.active{
+    background-color: #2558ff;
+}
+
+nav{
+    background-color:#49037b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    min-height: 70px;
+    z-index: 9999;
+}
+
+nav .title{
+    text-decoration: none;
+    font-size: 1.4rem;
+    margin: 1.3rem;
+    font-weight: bold;
+    color: white;
+}
+
+nav ul{
+    display: flex;
+    padding: 0;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    display:block;
+    text-decoration: none;
+    color:white;
+    margin: 0 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+nav ul li a.act{
+    background-color:#2558ff;
+}
+
+nav ul li a:not(.act):hover{
+    background-color: #1e3da6;
+}
+
+nav .menu{
+    display: none;
+    position: absolute;
+    top: 1.25rem;
+    right: 0.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+nav .menu span{
+    height: 0.3rem;
+    width: 100%;
+    background-color: white;
+    border-radius: 0.2rem;
+}
+
+nav ul.open{
+    display:flex;
+}
+
+@media(max-width: 500px){
+    nav .menu{
+        display: flex;
+    }
+    nav{
+        flex-direction: column;
+        align-items: start;
+    }
+    
+    nav ul{
+        display: none;
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    nav ul li{
+        text-align: center;
+    }
+
+    nav ul li a{
+        margin: 0.2rem 0.5rem;
+    }
+}

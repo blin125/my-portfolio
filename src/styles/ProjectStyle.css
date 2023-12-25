@@ -1,0 +1,130 @@
+.projects-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; 
+}
+.card{
+    padding: 0 1rem ;
+    max-width: 100%;
+    background-color: rgb(51, 51, 113);
+    border-radius: 1rem;
+    padding-bottom: 1.2rem;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: scale(1.01);
+}
+
+.card-image {
+    min-width: 250px;
+    width: 30%;
+    max-width: 300px;
+}
+  
+.card-image img {
+    width: 100%;
+    border-radius: 0.7rem;
+    aspect-ratio: 2/1;
+}
+.card-col{
+    display: flex;
+    flex-direction: row;
+}
+
+.card-body{
+    width: 60%;
+    flex: 1;
+    padding: 0 2rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.card-body p {
+    font-size: var(--fs-400);
+    padding: 0;
+    margin: 0;
+}
+
+.card-bottom{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 1rem ;
+    justify-content: space-between;
+
+}
+.git-button{
+    border-radius: 0.5rem;
+    color: white;
+}
+
+.stack{
+    display: flex;
+    align-items: center;
+    color: white;
+    border-radius: 0.5rem;
+    
+}
+.stack-label{
+    white-space: nowrap;
+}
+
+.tech-icons{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 0.5rem;
+    overflow-x: auto;
+    max-height: calc(var(--fs-icon) * 2);
+    
+    &::-webkit-scrollbar {
+        width: 0.3rem; 
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 0.2rem;
+        background-color: #9256bd;
+    }
+        
+    &::-webkit-scrollbar-track {
+        border-radius: 0.2rem;
+        background-color: white;
+
+    }
+}
+
+.tech-img{
+    font-size: var(--fs-icon);
+    padding-left: 0.6rem;
+}
+
+@media (max-width: 1300px) {
+    .projects-section{
+        display: flex;
+        justify-content: center;
+    }
+    .card-image{
+        align-self: center;
+    }
+    .card-col{
+        flex-direction: column;
+    }
+    .card-body{
+        width: 100%;
+        flex: 1;
+        padding: 0;
+        padding-top: 1rem;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-image {
+        min-width: 230px;
+        width: 30%;
+    }
+      
+}
