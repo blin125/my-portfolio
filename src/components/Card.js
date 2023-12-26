@@ -1,7 +1,7 @@
 import React from 'react';
 import questionMark from '../images/QuestionMark.png';
 
-const CardComponent = ({ title, imageSrc, description, githubLink, stack}) => {
+const CardComponent = ({ title, imageSrc, description, githubLink, stack, projLink}) => {
     return (
     <div className='card'>
         <div className='card-title'>
@@ -23,16 +23,20 @@ const CardComponent = ({ title, imageSrc, description, githubLink, stack}) => {
                             MAIN STACK :
                         </div>
                         <div className='tech-icons'>
-                            {stack.map((item) => (
-                                React.createElement(item.src, {
-                                    key: item.id,
-                                    className: 'tech-img',
-                                    alt: item.alt,
-                                  })
-                            ))}
+                            {stack.length > 0 ? (
+                                stack.map((item) => (
+                                    React.createElement(item.src, {
+                                        key: item.id,
+                                        className: 'tech-img',
+                                        alt: item.alt,
+                                      })
+                                ))
+                            ) : (
+                                <span>&nbsp;N/A</span>
+                            )}
                         </div>
                     </div>
-                    <a className="git-button" href={githubLink} target="_blank" rel="noopener noreferrer">
+                    <a className="git-button" href={projLink} target="_blank" rel="noopener noreferrer">
                         See more on GitHub
                     </a>
                 </div>

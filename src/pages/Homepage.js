@@ -20,6 +20,8 @@ function Home(){
     const linkedinURL = 'https://www.linkedin.com/in/bruno-lino-2a03501b8/';
     const emailURL = 'brunolino00@hotmail.com';
     const gitHubtURL = 'https://github.com/blin125';
+    const capstoneURL = 'https://github.com/blin125/capstone';
+    const myPortfolioURL = 'https://github.com/blin125/my-portfolio'
     const stack = [
         { id: "aws", src: FaAws, alt: "AWS Logo" },
         { id: "js", src: TbBrandJavascript, alt: "JavaScript Logo" },
@@ -119,6 +121,7 @@ function Home(){
                                     " They can see each application as well as be able to add, remove, and edit each course in the system."}
                                 githubLink="https://github.com/your-username/your-repo"
                                 stack={stack}
+                                projLink = {capstoneURL}
                             />
                             <CardComponent
                                 title="My Portfolio"
@@ -129,13 +132,14 @@ function Home(){
                                     " Once the projects list grows, I will look into incorporating a pagination method and perhaps a search function for a better user experience. "}
                                 githubLink="https://github.com/your-username/your-repo"
                                 stack={stack.slice(1,3)}
+                                projLink={myPortfolioURL}
                             />
                             <CardComponent
                                 title="To Be Announced"
                                 imageSrc={questionMark}
                                 description= {"It is in the works, stay tuned!"}
                                 githubLink="https://github.com/your-username/your-repo"
-                                stack={stack.slice(1,3)}
+                                stack={[]}
                             />
                         </div>
                     </div>

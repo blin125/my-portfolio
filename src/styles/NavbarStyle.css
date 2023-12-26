@@ -9,14 +9,13 @@ nav{
     align-items: center;
     position: sticky;
     top: 0;
-    min-height: 70px;
     z-index: 9999;
 }
 
 nav .title{
     text-decoration: none;
-    font-size: 1.4rem;
-    margin: 1.3rem;
+    font-size: var(--fs-600);
+    margin: 1.2rem;
     font-weight: bold;
     color: white;
 }
@@ -49,7 +48,7 @@ nav ul li a:not(.act):hover{
 nav .menu{
     display: none;
     position: absolute;
-    top: 1.25rem;
+    top: 1.3rem;
     right: 0.5rem;
     flex-direction: column;
     justify-content: space-between;
@@ -72,6 +71,8 @@ nav ul.open{
 @media(max-width: 500px){
     nav .menu{
         display: flex;
+        width: 1.75rem;
+        height: 1.5rem;
     }
     nav{
         flex-direction: column;
@@ -91,4 +92,5 @@ nav ul.open{
     nav ul li a{
         margin: 0.2rem 0.5rem;
     }
+
 }

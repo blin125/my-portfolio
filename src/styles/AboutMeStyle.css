@@ -24,21 +24,16 @@
     display: flex;
 }
 
-.socials a{
-    min-width: 1.5em;
-    min-height: 1.6em;
+.socials a {
+    font-size: 1.6em;
+    display: flex;
     text-decoration: none;
     text-align: center;
     color: white;
     margin: 0.5rem;
     background-color: rgb(45, 45, 145);
     border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-}
-.socials a{
-    font-size: 1.4em;
-    line-height: 1.6em;
+    padding: 0.5rem;
     position: relative;
     z-index: 10;
     transition: color 0.5s;
@@ -75,8 +70,7 @@
 .line{
     display: flex;
     width: 100%;
-    padding: 1.5rem 0 1rem 0 ;
-    margin: 1rem;
+    margin: 1.5rem 0;
     justify-content: center;
 }
 
@@ -92,7 +86,8 @@
     padding: 0 1em 0 1em;
 }
 
-
-@media (min-width: 1024px) {
-    
+@media (max-width: 768px){
+    .socials a{
+        font-size: 1.4rem;
+    }
 }
