@@ -3,7 +3,7 @@ import ContactLinks from '../components/ContactLink'
 import '../styles/AboutMeStyle.css';
 import '../styles/ProjectStyle.css';
 import '../styles/ContactStyle.css';
-import profile from '../images/Profile.png';
+import profile from '../images/Profile.jpg';
 import capstone from '../images/MarkerMatchLogo.png';
 import portfolio from '../images/MyPortfolio.png';
 import questionMark from '../images/QuestionMark.png';
@@ -101,7 +101,8 @@ function Home(){
                             Services Intern, focusing on troubleshooting and developing a web application to boost workspace productivity.
                             <br/><br/> Beyond the tech world, I find joy in Brazilian Jiu-Jitsu, embracing the challenges both physically and mentally. 
                             You'll often catch me at the gym, pushing my limits for a healthy lifestyle. 
-                            Additionally, I'm a TV show and movies enthusiast, specially if the topic is about Zombies.
+                            Additionally, I'm a TV show and movies enthusiast, specially if the topic is about Zombies (Disclaimer: I do not bite, so{' '}
+                            <a id="contact-redir" href={`mailto:${emailURL}`} target="_blank" rel="noopener noreferrer">get in touch!</a>).
                         </p>
                     </div>
                     <div className='line'>

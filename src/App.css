@@ -66,3 +66,7 @@ h2{
 h3{
     font-size: var(--fs-500);
 }
+
+link[rel="icon"] {
+    border-radius: 50%;
+}

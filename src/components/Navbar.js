@@ -21,10 +21,13 @@ const Navbar = ({ scrollToSection, activeSection }) => {
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
     };
+    const handleTitleClick = () => {
+        window.location.reload();
+    }
 
     return (
         <nav ref={navbarRef}>
-            <Link to="/" className="title"> My Portfolio</Link>
+            <Link to="/my-portfolio" className="title" onClick={handleTitleClick}> My Portfolio</Link>
             <div className={`menu ${menuOpen ? "open" : ""}`} onClick={toggleMenu}>
                 <span></span>
                 <span></span>

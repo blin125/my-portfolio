@@ -6,13 +6,13 @@ const ContactLinks = ({linkedinURL, emailURL, gitHubtURL}) => {
     return(
         <>
             <a href={linkedinURL} target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faLinkedinIn} />
+                <FontAwesomeIcon icon={faLinkedinIn} />
             </a>
             <a href={`mailto:${emailURL}`} target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faEnvelope} />
+                <FontAwesomeIcon icon={faEnvelope} />
             </a>
             <a href={gitHubtURL} target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faGithub} />
+                <FontAwesomeIcon icon={faGithub} />
             </a>
         </>
     );
