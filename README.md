@@ -17,8 +17,10 @@ You can also check the deployed version using GitHub Pages [Here](https://blin12
 
 ## Additional Features
 
+* I am currently using a combination of React state management, Intersection Observer API, and direct DOM manipulations. However, Sometimes, upon user scrolling, the navbar that represents the section the user is reading is not updated as accurately as I would like. So, I will look at techniques to improve its accuracy.
+  
 * At the moment, there are not many projects on the page, but once it grows more, I am thinking about adding a search function and a pagination variant.
 
 * The LinkedIn, Email, and GitHub links have a cool on-hover feature to bring users' attention to them. However, features that incentivize the user to contact me are not very obvious and are sometimes clunky, so I am thinking of updating it.
 
-* I am currently using a combination of React state management, Intersection Observer API, and direct DOM manipulations. However, Sometimes, upon user scrolling, the navbar that represents the section the user is reading is not updated as accurately as I would like. So, I will look at techniques to improve its accuracy.
+
