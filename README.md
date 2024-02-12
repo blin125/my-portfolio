@@ -1,7 +1,7 @@
 ## My Portfolio
 This project was made to display my most recent projects in a more accessible way. It contains one scrollable page with some information about myself and how to get in contact with me.
 
-You can also check the deployed version using GitHub Pages [Here](https://blin125.github.io/my-portfolio/)
+You can also check the deployed version using GitHub Pages [Here](https://blin125.github.io/my-portfolio/).
 
 ## Running:
 
