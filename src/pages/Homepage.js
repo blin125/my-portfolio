@@ -20,8 +20,6 @@ import { SiJest } from 'react-icons/si';
 import { SiRiotgames } from 'react-icons/si';
 import { SiNodedotjs } from 'react-icons/si';
 
-
-
 function Home(){
     const [introText, setIntroText] = useState('');
     const [activeSection, setActiveSection] = useState('about-section');
@@ -111,13 +109,16 @@ function Home(){
                     <div id="about-section" className="section about-me">
                         <h2>About Me</h2>
                         <p>
-                            I am a recent Computer Science graduate from the University of Auckland. My education equipped me with a strong 
-                            foundation in programming and software development. During the summer of 2022 I interned at Vista, where I honed my skills as a Software 
-                            Services Intern, focusing on troubleshooting and developing a web application to boost workspace productivity.
-                            <br/><br/> Beyond the tech world, I find joy in Brazilian Jiu-Jitsu, embracing the challenges both physically and mentally. 
-                            You'll often catch me at the gym, pushing my limits for a healthy lifestyle. 
-                            Additionally, I'm a TV show and movies enthusiast, specially if the topic is about Zombies (Disclaimer: I do not bite, so{' '}
-                            <a id="contact-redir" href={`mailto:${emailURL}`} target="_blank" rel="noopener noreferrer">get in touch!</a>).
+                            I am a graduate of the University of Auckland with a Bachelor of Science in Computer Science and a genuine passion for coding and technology that began in 2020. 
+                            I’m proficient in several programming languages, including C#, Python, and JavaScript, and I’m eager to apply my skills in a graduate software development role. 
+                            During my Software Services Internship at Vista Entertainment in the summer of 2022/2023, I honed my development skills in an agile environment, contributing to both front-end and back-end projects. 
+                            Currently, as a Service Specialist at Kordia, I work with Microsoft 365, security tools, and networking solutions.
+                            <br/><br/>
+                            Outside of work, I love training Brazilian Jiu-Jitsu and going to the gym, activities that challenge me both physically and mentally. I’m also a big fan of movies and TV shows,
+                            while enjoying board game nights with family and friends.
+                            <br/><br/>
+                            If you’d like to connect, feel free to {' '}
+                            <a id="contact-redir" href={`mailto:${emailURL}`} target="_blank" rel="noopener noreferrer">get in touch!</a>
                         </p>
                     </div>
                     <div className='line'>
