@@ -7,11 +7,19 @@ import profile from '../images/Profile.jpg';
 import capstone from '../images/MarkerMatchLogo.png';
 import portfolio from '../images/MyPortfolio.png';
 import questionMark from '../images/QuestionMark.png';
+import LolDashboardDemo from '../gifs/LolDashboardDemo.mp4'
 import { SiFirebase } from "react-icons/si";
 import CardComponent from '../components/Card';
 import { useEffect, useState } from 'react';
 import {FaAws, FaReact} from 'react-icons/fa'
 import { TbBrandJavascript } from "react-icons/tb";
+import { SiTailwindcss } from 'react-icons/si';
+import { SiChartdotjs } from 'react-icons/si';
+import { SiEslint } from 'react-icons/si';
+import { SiJest } from 'react-icons/si';
+import { SiRiotgames } from 'react-icons/si';
+import { SiNodedotjs } from 'react-icons/si';
+
 
 
 function Home(){
@@ -21,12 +29,19 @@ function Home(){
     const emailURL = 'brunolino00@hotmail.com';
     const gitHubtURL = 'https://github.com/blin125';
     const capstoneURL = 'https://github.com/blin125/capstone';
-    const myPortfolioURL = 'https://github.com/blin125/my-portfolio'
+    const myPortfolioURL = 'https://github.com/blin125/my-portfolio';
+    const lolDarshboard = 'https://github.com/blin125/lol-dashboard';
     const stack = [
-        { id: "aws", src: FaAws, alt: "AWS Logo" },
-        { id: "js", src: TbBrandJavascript, alt: "JavaScript Logo" },
-        { id: "react", src: FaReact, alt: "React Logo" },
-        { id: "firebase", src: SiFirebase, alt: "React Logo" },
+    { id: 'aws', src: FaAws, alt: 'AWS Logo' },
+    { id: 'js', src: TbBrandJavascript, alt: 'JavaScript Logo' },
+    { id: 'react', src: FaReact, alt: 'React Logo' },
+    { id: 'firebase', src: SiFirebase, alt: 'Firebase Logo' },
+    { id: 'tailwind', src: SiTailwindcss, alt: 'Tailwind CSS Logo' },
+    { id: 'chartjs', src: SiChartdotjs, alt: 'Chart.js Logo' },
+    { id: 'eslint', src: SiEslint, alt: 'ESLint Logo' },
+    { id: 'jest', src: SiJest, alt: 'Jest Logo' },
+    { id: 'riot', src: SiRiotgames, alt: 'Riot Games Logo' },
+    { id: 'node', src: SiNodedotjs, alt: 'Node.js Logo' },
     ];
     useEffect(() => {
         const type = (text, ind) =>{
@@ -120,8 +135,7 @@ function Home(){
                                     " Students can see a catalog of courses that they can apply to become markers for. Course coordinators can " + 
                                     " edit the course requirements (of courses they are responsible for); marker coordinators have no restrictions. " + 
                                     " They can see each application as well as be able to add, remove, and edit each course in the system."}
-                                githubLink="https://github.com/your-username/your-repo"
-                                stack={stack}
+                                stack={stack.slice(0,4)}
                                 projLink = {capstoneURL}
                             />
                             <CardComponent
@@ -131,15 +145,23 @@ function Home(){
                                     " It currently contains three main tabs: About Me, Projects, and Contact. About Me section is a little section about "+
                                     " myself. Projects were divided into cards, where each card was a project I wanted to showcase, and Contact was for contacting me." +
                                     " Once the projects list grows, I will look into incorporating a pagination method and perhaps a search function for a better user experience. "}
-                                githubLink="https://github.com/your-username/your-repo"
                                 stack={stack.slice(1,3)}
                                 projLink={myPortfolioURL}
+                            />
+                            <CardComponent
+                                title="League Dashboard"
+                                imageSrc={LolDashboardDemo}
+                                description= {"League Dashboard is a lightweight dashboard for League of Legends ranked players. Its primary focus is on fetching, " + 
+                                    " processing, and visualizing Riot Games API data, providing a clear view of a player’s profile, ranked stats, recent match history, " + 
+                                    "and simple visualizations (win/loss and role win-rate)."}
+                                stack={[stack[0], ...stack.slice(4)]}
+                                projLink={lolDarshboard}
+                                mediaType="video"
                             />
                             <CardComponent
                                 title="To Be Announced"
                                 imageSrc={questionMark}
                                 description= {"It is in the works, stay tuned!"}
-                                githubLink="https://github.com/your-username/your-repo"
                                 stack={[]}
                             />
                         </div>
