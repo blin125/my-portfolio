@@ -7,7 +7,7 @@ import profile from '../images/Profile.jpg';
 import capstone from '../images/MarkerMatchLogo.png';
 import portfolio from '../images/MyPortfolio.png';
 import questionMark from '../images/QuestionMark.png';
-import LolDashboardDemo from '../gifs/LolDashboardDemo.mp4'
+import LolDashboardDemo from '../videos/LolDashboardDemo.mp4'
 import { SiFirebase } from "react-icons/si";
 import CardComponent from '../components/Card';
 import { useEffect, useState } from 'react';
